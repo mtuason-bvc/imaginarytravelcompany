@@ -37,41 +37,50 @@
     <!-- form -->
     <div class="container">
         <h1 class="text-center p-3 ">Schedule Booking Appointment</h1>
-        <form class="row g-3 ">
+        <form class="row g-3" action="mailto:info@albertavacationcompany.ca">
             <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">First Name</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <label for="inputFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" name="inputFirstName" id="inputFirstName">
             </div>
             <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Last Name</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="inputLastName" id="inputLastName">
             </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="1234 Main St">
             </div>
             <div class="col-12">
                 <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                <input type="text" class="form-control" name="inputAddress2" id="inputAddress2" placeholder="Apartment, studio, or floor">
             </div>
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" class="form-control" name="inputCity" id="inputCity">
             </div>
+            
             <div class="col-md-4">
                 <label for="inputState" class="form-label">Province</label>
-                <select id="inputState" class="form-select">
+                <select id="inputState" name="inputState" class="form-select">
                     <option selected>Choose...</option>
-                    <option>...</option>
+                    <option>Alberta</option>
+                    <option>Quebec</option>
+                    <option>Manitoba</option>
                 </select>
             </div>
             <div class="col-md-2">
                 <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" name="inputZip" id="inputZip">
             </div>
-            <div class="col-md-12">
-                <textarea class="form-control" aria-label="With textarea">Summary of your dream trip</textarea>   
+            <div class="col-md-6">
+                <label for="inputDate" class="form-label">Desired Date</label>
+                <input type="date" class="form-control" name="inputDate" id="inputDate">
             </div>
+            
+
+            <!-- <div class="col-md-12">
+                <textarea class="form-control" aria-label="With textarea" name="inputSummary" id="inputSummary">Summary of your dream trip</textarea>   
+            </div> -->
             <!-- <div class="col-12">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -80,8 +89,8 @@
                     </label>
                 </div>
             </div> -->
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="col-12 text-center">
+                <input type="submit" class="btn btn-primary"></button>
             </div>
         </form>
     </div>
